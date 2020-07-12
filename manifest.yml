@@ -1,0 +1,17 @@
+modules:
+  'jira:issuePanel':
+    - key: diagrammer-jira-issue-panel
+      function: main
+      title: Diagrammer
+      description: Create diagrams and charts in your Jira Issue
+      label: Diagrammer
+  function:
+    - key: main
+      handler: index.run
+permissions:
+  scopes:
+    - 'read:jira-work'
+    - 'write:jira-work'
+app:
+  id: 'ari:cloud:ecosystem::app/e1375e3b-1ce8-4a06-b9cb-4f1b01efbbfc'
+  name: diagrammer
